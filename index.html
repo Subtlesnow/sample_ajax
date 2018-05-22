@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <title>estonia-ajax</title>
+</head>
+<body class='container'>
+  <div class='h2 mx-auto' style='width: 500px'>Country data from REST Countries</div>
+  <div class='row'>
+    <div id='app' class='offset-4 col-4'>
+      <form>
+        <div class='form-group'>
+          <label for='input-box'>Country: </label>
+          <input id='input-box' class='form-control' type='text' />
+        </div>
+        <button type='submit' id='find-country' class='btn btn-primary'>Submit</button>
+      </form>
+      <div id='country-data'></div>
+    </div>
+  </div>
+  <script type='text/javascript' src='./axios.js'></script>
+  <script type='text/javascript' src='./app.js'></script>
+</body>
+</html>
